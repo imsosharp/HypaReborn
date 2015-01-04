@@ -107,12 +107,12 @@ namespace HypaJungle
                 {
                     if (focusedCamp.priority >= 20)
                     {
-                        GamePacket gPacketT;
+                        /*GamePacket gPacketT;
                         gPacketT = Packet.S2C.Ping.Encoded(new Packet.S2C.Ping.Struct(player.Position[0], player.Position[1], 0, 0, Packet.PingType.Normal));
                         gPacketT.Process();
 
                         gPacketT = Packet.S2C.Ping.Encoded(new Packet.S2C.Ping.Struct(player.Position[0], player.Position[1], 0, 0, Packet.PingType.Fallback));
-                        gPacketT.Process();
+                        gPacketT.Process();*/
                     }
 
                     Console.WriteLine("New camp found "+focusedCamp);
