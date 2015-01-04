@@ -98,7 +98,7 @@ namespace HypaJungle
                 Game.OnGameUpdate += OnGameUpdate;
                 Drawing.OnDraw += onDraw;
 
-                Game.OnGameProcessPacket += Game_OnGameProcessPacket;
+                //Game.OnGameProcessPacket += Game_OnGameProcessPacket;
                 JungleClearer.setUpJCleaner();
 
                 //Load custom stuff
@@ -128,7 +128,7 @@ namespace HypaJungle
 
         }
 
-        static void Game_OnGameProcessPacket(GamePacketEventArgs args)
+        /* static void Game_OnGameProcessPacket(GamePacketEventArgs args)
         {
             if (args.PacketData[0] == Packet.S2C.EmptyJungleCamp.Header)
             {
@@ -174,7 +174,7 @@ namespace HypaJungle
                 }
 
             }
-        }
+        }*/
 
         private static void OnGameUpdate(EventArgs args)
         {
